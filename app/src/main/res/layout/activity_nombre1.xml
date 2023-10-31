@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nombre1">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="174dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="89dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ust" />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="327dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="113dp"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="176dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="57dp"
+        android:text="@string/btn_siguiente"
+        android:onClick="Enviar"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombre" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="147dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_continuar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_continuar"
+        app:srcCompat="@drawable/baseline_add_to_home_screen_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
